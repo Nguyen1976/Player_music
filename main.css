@@ -120,6 +120,7 @@ header h2 {
 .song {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #fff;
     margin: 15px 6px;
     border-radius: 5px;
@@ -147,6 +148,7 @@ header h2 {
     height: 44px;
     border-radius: 50%;
     margin-left: 10px;
+    padding-right: 44px 4px;
 }
 
 .playlist .body {
