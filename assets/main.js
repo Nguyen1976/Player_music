@@ -1,4 +1,4 @@
-import { getSong } from '../modules/api.js';
+// import { getSong } from '../modules/api.js';
 import { getConfig, setConfig } from '../modules/config.js';
 import { $, $$, renderPlaylist, updateCurrentSong } from '../modules/dom.js';
 
@@ -18,7 +18,50 @@ const app = {
     currentIndex: 0,
     isRandom: false,
     isRepeat: false,
-    songs: [],
+    songs: [
+        {
+            name: "Đừng làm trái tim anh đau",
+            singer: "Sơn Tùng MTP",
+            path: "../mp3/DLTTAD.mp3",
+            image: "../img/DLTTAD.jpg"
+          },
+          {
+            name: "Muộn rồi mà sao còn",
+            singer: "Sơn Tùng MTP",
+            path: "../mp3/MRMSC.mp3",
+            image: "../img/MRMSC.jpg"
+          },
+          {
+            name: "Nơi này có anh",
+            singer: "Sơn Tùng MTP",
+            path: "../mp3/NNCA.mp3",
+            image: "../img/NNCA.jpg"
+          },
+          {
+            name: "Có chắc yêu là đây",
+            singer: "Sơn Tùng MTP",
+            path: "../mp3/CCYLD.mp3",
+            image: "../img/CCYLD.jpg"
+          },
+          {
+            name: "Chúng ta của hiện tại",
+            singer: "Sơn Tùng MTP",
+            path: "../mp3/CTCHT.mp3",
+            image: "../img/CTCHT.jpg"
+          },
+          {
+            name: "Hãy trao cho anh",
+            singer: "Sơn Tùng MTP",
+            path: "../mp3/HTCA.mp3",
+            image: "../img/HTCA.jpg"
+          },
+          {
+            name: "Lạc trôi",
+            singer: "Sơn Tùng MTP",
+            path: "../mp3/LT.mp3",
+            image: "../img/LT.jpg"
+          }
+    ],
     config: getConfig(),
 
     defineProperties: function() {
@@ -186,18 +229,28 @@ const app = {
     },
 
     start: function() {
-        getSong((data) => {
-            this.songs = data;
-            this.loadConfig();
-            this.defineProperties();
-            this.handleEvents();
-            this.loadCurrentSong();
-            this.render();
-            const randomBtn = $('.btn-random');
-            const repeatBtn = $('.btn-repeat');
-            randomBtn.classList.toggle('active', this.isRandom);
-            repeatBtn.classList.toggle('active', this.isRepeat);
-        });
+        // getSong((data) => {
+            // this.songs = data;
+            // this.loadConfig();
+            // this.defineProperties();
+            // this.handleEvents();
+            // this.loadCurrentSong();
+            // this.render();
+            // const randomBtn = $('.btn-random');
+            // const repeatBtn = $('.btn-repeat');
+            // randomBtn.classList.toggle('active', this.isRandom);
+            // repeatBtn.classList.toggle('active', this.isRepeat);
+        // });
+        // this.songs = data;
+        this.loadConfig();
+        this.defineProperties();
+        this.handleEvents();
+        this.loadCurrentSong();
+        this.render();
+        const randomBtn = $('.btn-random');
+        const repeatBtn = $('.btn-repeat');
+        randomBtn.classList.toggle('active', this.isRandom);
+        repeatBtn.classList.toggle('active', this.isRepeat);
     },
 
     render: function() {
