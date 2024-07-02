@@ -1,6 +1,6 @@
 // import { getSong } from '../modules/api.js';
-import { getConfig, setConfig } from '../modules/config.js';
-import { $, $$, renderPlaylist, updateCurrentSong } from '../modules/dom.js';
+import { getConfig, setConfig } from './modules/config.js';
+import { $, $$, renderPlaylist, updateCurrentSong } from './modules/dom.js';
 
 const cdThumb = $('.cd-thumb');
 const cd = $('.cd');
@@ -20,47 +20,47 @@ const app = {
     isRepeat: false,
     songs: [
         {
-            name: "Đừng làm trái tim anh đau",
-            singer: "Sơn Tùng MTP",
-            path: "./mp3/DLTTAD.mp3",
-            image: "./img/DLTTAD.jpg"
-          },
-          {
-            name: "Muộn rồi mà sao còn",
-            singer: "Sơn Tùng MTP",
-            path: "./mp3/MRMSC.mp3",
-            image: "./img/MRMSC.jpg"
-          },
-          {
-            name: "Nơi này có anh",
-            singer: "Sơn Tùng MTP",
-            path: "./mp3/NNCA.mp3",
-            image: "./img/NNCA.jpg"
-          },
-          {
-            name: "Có chắc yêu là đây",
-            singer: "Sơn Tùng MTP",
-            path: "./mp3/CCYLD.mp3",
-            image: "./img/CCYLD.jpg"
-          },
-          {
-            name: "Chúng ta của hiện tại",
-            singer: "Sơn Tùng MTP",
-            path: "./mp3/CTCHT.mp3",
-            image: "./img/CTCHT.jpg"
-          },
-          {
-            name: "Hãy trao cho anh",
-            singer: "Sơn Tùng MTP",
-            path: "./mp3/HTCA.mp3",
-            image: "./img/HTCA.jpg"
-          },
-          {
-            name: "Lạc trôi",
-            singer: "Sơn Tùng MTP",
-            path: "./mp3/LT.mp3",
-            image: "./img/LT.jpg"
-          }
+        name: "Đừng làm trái tim anh đau",
+        singer: "Sơn Tùng MTP",
+        path: "./mp3/DLTTAD.mp3",
+        image: "./img/DLTTAD.jpg"
+        },
+        {
+        name: "Muộn rồi mà sao còn",
+        singer: "Sơn Tùng MTP",
+        path: "./mp3/MRMSC.mp3",
+        image: "./img/MRMSC.jpg"
+        },
+        {
+        name: "Nơi này có anh",
+        singer: "Sơn Tùng MTP",
+        path: "./mp3/NNCA.mp3",
+        image: "./img/NNCA.jpg"
+        },
+        {
+        name: "Có chắc yêu là đây",
+        singer: "Sơn Tùng MTP",
+        path: "./mp3/CCYLD.mp3",
+        image: "./img/CCYLD.jpg"
+        },
+        {
+        name: "Chúng ta của hiện tại",
+        singer: "Sơn Tùng MTP",
+        path: "./mp3/CTCHT.mp3",
+        image: "./img/CTCHT.jpg"
+        },
+        {
+        name: "Hãy trao cho anh",
+        singer: "Sơn Tùng MTP",
+        path: "./mp3/HTCA.mp3",
+        image: "./img/HTCA.jpg"
+        },
+        {
+        name: "Lạc trôi",
+        singer: "Sơn Tùng MTP",
+        path: "./mp3/LT.mp3",
+        image: "./img/LT.jpg"
+        }
     ],
     config: getConfig(),
 
